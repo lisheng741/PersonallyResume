@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈立升个人简历</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/site.css">
+
+</head>
+
+<body class="show-body-background">
+
+    <div class="shadow"></div>
+
+    <div class="program">
+        <svg t="1613442732173" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="961" width="64" height="64">
+            <path
+                d="M960 96H64c-35.3 0-64 28.6-64 64v704c0 35.3 28.7 64 64 64h896c35.3 0 64-28.7 64-64V160c0-35.4-28.7-64-64-64z m-80 128c0 8.8-3.6 16.8-9.4 22.6-5.8 5.8-13.8 9.4-22.6 9.4-17.7 0-32-14.3-32-32 0-8.8 3.6-16.8 9.4-22.6 5.8-5.8 13.8-9.4 22.6-9.4s16.8 3.6 22.6 9.4c5.8 5.8 9.4 13.8 9.4 22.6z m-128 0c0 8.8-3.6 16.8-9.4 22.6-5.8 5.8-13.8 9.4-22.6 9.4-17.7 0-32-14.3-32-32 0-8.8 3.6-16.8 9.4-22.6 5.8-5.8 13.8-9.4 22.6-9.4s16.8 3.6 22.6 9.4c5.8 5.8 9.4 13.8 9.4 22.6z m-182.6-22.6c5.8-5.8 13.8-9.4 22.6-9.4s16.8 3.6 22.6 9.4c5.8 5.8 9.4 13.8 9.4 22.6s-3.6 16.8-9.4 22.6c-5.8 5.8-13.8 9.4-22.6 9.4-17.7 0-32-14.3-32-32 0-8.8 3.6-16.8 9.4-22.6zM960 848c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V360c0-4.4 3.6-8 8-8h880c4.4 0 8 3.6 8 8v488z"
+                p-id="962" fill="#ffffff"></path>
+            <path
+                d="M439.8 767.5c-15.6-8.3-21.5-27.7-13.2-43.3l114.4-215c8.3-15.6 27.7-21.5 43.3-13.2 15.6 8.3 21.5 27.7 13.2 43.3L483 754.3c-8.3 15.6-27.6 21.5-43.2 13.2zM310.5 707.8l-61.2-61.2c-12.5-12.5-12.5-32.8 0-45.3l61.2-61.2c1.6-1.6 4.1-1.6 5.7 0l39.6 39.6c1.6 1.6 1.6 4.1 0 5.7l-27.2 27.2c-6.2 6.2-6.2 16.4 0 22.6l27.2 27.2c1.6 1.6 1.6 4.1 0 5.7l-39.6 39.6c-1.6 1.7-4.1 1.7-5.7 0.1zM707.8 707.8l-39.6-39.6c-1.6-1.6-1.6-4.1 0-5.7l27.2-27.2c6.2-6.2 6.2-16.4 0-22.6l-27.2-27.2c-1.6-1.6-1.6-4.1 0-5.7l39.6-39.6c1.6-1.6 4.1-1.6 5.7 0l61.2 61.2c12.5 12.5 12.5 32.8 0 45.3l-61.2 61.2c-1.6 1.5-4.1 1.5-5.7-0.1z"
+                p-id="963" fill="#ffffff"></path>
+        </svg>
+        <p>双击我启动</p>
+    </div>
+
+    <div class="page">
+        <div class="main"></div>
+    </div>
+    <div class="code" data-type="html" style="top: 10px;">
+        <div class="code-title">Html</div>
+        <div class="code-toggle"></div>
+        <pre class="code-html"></pre>
+    </div>
+    <div class="code" data-type="css" style="bottom: 10px;">
+        <div class="code-title">Css</div>
+        <pre class="code-css"></pre>
+    </div>
+
+    <script src="static/jquery.min.js"></script>
+    <script src="static/bootstrap.bundle.min.js"></script>
+    <!-- <script src="static/site.js"></script> -->
+    <script>
+        let bolStartup = false;
+
+        $(document).ready(function() {
+            $(document).on("dblclick", ".program", () => {
+                programClick();
+            });
+        })
+
+        function programClick() {
+            $(".program").addClass("show-program-exit");
+
+            setTimeout(() => {
+                $(".program").removeClass("show-program-exit");
+            }, 5000);
+        }
+    </script>
+</body>
+
+</html>

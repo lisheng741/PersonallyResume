@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<!-- by lisheng741@qq.com -->
+<!-- 转载请保留作者信息，谢谢~ -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈立升个人简历</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/site.css">
+
+</head>
+
+<body>
+    <div class="console">
+        <div>Personally Resume [版本 1.0.0.0]</div>
+        <div style="margin-bottom: 1em;">(c) 2021 lisheng741@qq.com。 保留所有权利。</div>
+    </div>
+
+    <div class="shadow"></div>
+
+    <div class="program">
+        <svg t="1613442732173" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="961" width="64" height="64">
+            <path
+                d="M960 96H64c-35.3 0-64 28.6-64 64v704c0 35.3 28.7 64 64 64h896c35.3 0 64-28.7 64-64V160c0-35.4-28.7-64-64-64z m-80 128c0 8.8-3.6 16.8-9.4 22.6-5.8 5.8-13.8 9.4-22.6 9.4-17.7 0-32-14.3-32-32 0-8.8 3.6-16.8 9.4-22.6 5.8-5.8 13.8-9.4 22.6-9.4s16.8 3.6 22.6 9.4c5.8 5.8 9.4 13.8 9.4 22.6z m-128 0c0 8.8-3.6 16.8-9.4 22.6-5.8 5.8-13.8 9.4-22.6 9.4-17.7 0-32-14.3-32-32 0-8.8 3.6-16.8 9.4-22.6 5.8-5.8 13.8-9.4 22.6-9.4s16.8 3.6 22.6 9.4c5.8 5.8 9.4 13.8 9.4 22.6z m-182.6-22.6c5.8-5.8 13.8-9.4 22.6-9.4s16.8 3.6 22.6 9.4c5.8 5.8 9.4 13.8 9.4 22.6s-3.6 16.8-9.4 22.6c-5.8 5.8-13.8 9.4-22.6 9.4-17.7 0-32-14.3-32-32 0-8.8 3.6-16.8 9.4-22.6zM960 848c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V360c0-4.4 3.6-8 8-8h880c4.4 0 8 3.6 8 8v488z"
+                p-id="962" fill="#ffffff"></path>
+            <path
+                d="M439.8 767.5c-15.6-8.3-21.5-27.7-13.2-43.3l114.4-215c8.3-15.6 27.7-21.5 43.3-13.2 15.6 8.3 21.5 27.7 13.2 43.3L483 754.3c-8.3 15.6-27.6 21.5-43.2 13.2zM310.5 707.8l-61.2-61.2c-12.5-12.5-12.5-32.8 0-45.3l61.2-61.2c1.6-1.6 4.1-1.6 5.7 0l39.6 39.6c1.6 1.6 1.6 4.1 0 5.7l-27.2 27.2c-6.2 6.2-6.2 16.4 0 22.6l27.2 27.2c1.6 1.6 1.6 4.1 0 5.7l-39.6 39.6c-1.6 1.7-4.1 1.7-5.7 0.1zM707.8 707.8l-39.6-39.6c-1.6-1.6-1.6-4.1 0-5.7l27.2-27.2c6.2-6.2 6.2-16.4 0-22.6l-27.2-27.2c-1.6-1.6-1.6-4.1 0-5.7l39.6-39.6c1.6-1.6 4.1-1.6 5.7 0l61.2 61.2c12.5 12.5 12.5 32.8 0 45.3l-61.2 61.2c-1.6 1.5-4.1 1.5-5.7-0.1z"
+                p-id="963" fill="#ffffff"></path>
+        </svg>
+        <p>双击我启动</p>
+    </div>
+
+    <div class="page">
+        <div class="main"></div>
+    </div>
+    <div class="code" data-type="html" style="top: 10px;">
+        <div class="code-title">Html</div>
+        <div class="code-toggle"></div>
+        <pre class="code-html"></pre>
+    </div>
+    <div class="code" data-type="css" style="bottom: 30px;">
+        <div class="code-title">Css</div>
+        <pre class="code-css"></pre>
+    </div>
+
+    <footer>
+        © 2021 - lisheng741@qq.com -
+    </footer>
+
+    <script src="static/jquery.min.js"></script>
+    <script src="static/bootstrap.bundle.min.js"></script>
+    <script src="static/site.js"></script>
+    <script>
+        //一、最开始控制台显示的内容
+        //说明：向控制台背景添加的是 html，所以实际上这个也可以写 html 标签，而且可以添加样式。
+        let lstConsole = [
+            "C:\\Users\\cl_lis> ", //每次都会在前面附带上这个字符串，//闪烁光标（未启用）<span class="cursor">__</span>
+            " ",
+            "欢迎来到陈立升的个人主页。",
+            "我们先启动一下这个系统.",
+            "请稍等……",
+            "3……",
+            "2……",
+            "1……"
+        ];
+        //二、添加简历内容
+        //内容，html 标签，可以添加属性，但是引号必须为 单引号！
+        //一行只能写一个完整的 html 标签，若要在 code-html 中换行，则用 \n
+        let lstHtml = [
+            "<!-- 系统已经启动完毕，接下来我们要做一个简历 -->",
+            "<!-- 先敲点内容吧 -->",
+            "<h1>陈立升</h1>",
+            "<p>意向：.NET开发工程师</p>",
+            "<h1>联系方式</h1>",
+            "<p>lisheng741@qq.com</p>",
+            "<h1>教育经历</h1>",
+            "<p>仲恺农业工程学院（本科）</p>",
+            "<h1>专业技能</h1>",
+            "<p>熟悉.NET平台，熟悉C#；熟悉SQL Server开发</p>",
+            "<p>熟悉HTML，CSS，Javascript，Ajax；熟悉jQuery，Bootstarp等框架</p>",
+            "<p>了解.NET5.0；了解VUE、Node.js；了解H5，CSS3，ES6</p>",
+            "<p>其他：熟悉chrome开发者工具，会Postman，C#操作Selenium</p>",
+            "<h1>获得荣誉</h1>",
+            "<p>校级三等奖学金*2</p>",
+            "<p>校级二等奖学金*2</p>",
+            "<p>励志奖学金*1</p>",
+            "<p>优秀毕业生</p>",
+            "<h1>项目经历</h1>",
+
+            "<h3>基于jQuery的个人网页简历（纯前端）</h3>",
+            "<p>该项目为个人网页简历（方便编辑），为纯前端静态页面，基于jQuery制作。</p>",
+            "<p>地址：<a href='http://resume.cnote.cn' target='_blank'>http://resume.cnote.cn</a>\n  （请使用电脑访问）</p>",
+            "<p>源码：<a href='https://gitee.com/chen3322275/PersonallyResume' target='_blank'>\n  https://gitee.com/chen3322275/PersonallyResume</a></p>",
+
+            "<h3>基于jQuery的课程表Demo（纯前端）</h3>",
+            "<p>从校内实用小工具抽离出来，demo为纯前端静态页面，基于jQuery制作。</p>",
+            "<p>地址：<a href='http://kb.cnote.cn' target='_blank'>http://kb.cnote.cn</a>\n  （请使用手机访问，或chrome手机模式）</p>",
+
+            "<h3>基于.NET的音乐搜索与下载软件（C/S结构）</h3>",
+            "<p>项目为C#爬虫项目，通过分析音乐平台试听操作，爬取试听音乐下载到本地。</p>",
+            "<p>使用C#基于.Net WinForm开发，爬取酷我、网易云、酷狗、QQ等四个平台。</p>",
+            "<p>源码：<a href='https://gitee.com/chen3322275/UnLockMusic' target='_blank'>\n  https://gitee.com/chen3322275/UnLockMusic</a></p>",
+
+            "<h3>企业实践教学管理系统开发维护</h3>",
+            "<p>包含学生实习、毕业设计等业务。在职期间独立负责运维。</p>",
+            "<h3>企业微信开发维护</h3>",
+            "<p>借助企业微信，打造学校的移动门户。该项目技术层面工作由本人独立负责。</p>",
+            "<h3>省医3.0系统升级</h3>",
+            "<p>驻点广东省人民医院，对2.0进行开发与维护，配合3.0门诊上线。</p>",
+            "<!-- 内容敲完了，好像样式不太好看…… -->",
+        ];
+        //三、修改简历样式
+        //限制：一行只能写一个注释，或者一个容器的样式（必须完整）
+        //注意：伪选择器无效
+        let lstCss = [
+            "/* 接下来修改简历的样式，先改一下背景吧 */",
+            ".main {overflow: hidden;position: relative;background: #BBFFEE;color: rgb(0, 25, 155);box-shadow: 5px 5px 100px rgb(99 155 175);width: 650px;padding: 22px;margin: 22px 10px 45px 22px;background-image: linear-gradient(45deg, #BBFFEE, #FFFFBB, #00B7DD);}",
+            ".main h1 {font-size: 1.8rem;border-bottom: solid 1px rgb(0, 25, 155);}",
+            ".main h3 {font-size: 1.5rem;padding-left: 12px;border-left: solid 3px rgb(0, 25, 155);}",
+            ".main p::before {content: '';position: absolute;left: -14px;top: calc( 50% - 3px);width: 6px;height: 6px;background: rgb(0, 25, 155);border-radius: 50%;}",
+            ".main p {position: relative;left: 26px;}",
+            "/* 简历制作完成，谢谢观赏~ */"
+        ];
+    </script>
+</body>
+
+</html>
